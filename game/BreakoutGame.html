@@ -26,6 +26,7 @@
         var paddleHeight = 10;
         var paddleWidth = 75;
         var paddleX = (canvas.width-paddleWidth)/2;
+        var interval = setInterval(draw, 10);
 
         var rightPressed = false;
         var leftPressed = false;
@@ -81,7 +82,7 @@
                     }
                     else {
                     alert ("GAME OVER");
-                    document.locatin.reload();
+                    document.location.reload();
                     clearInterval(interval);
                     }
                 }
@@ -98,6 +99,5 @@
             y += dy;
         }
 
-        var interval = setInterval(draw, 10);
     </script>
 </html>
